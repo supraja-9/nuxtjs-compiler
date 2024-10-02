@@ -1,0 +1,64 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*::-webkit-scrollbar {
+  display: none;
+}
+
+* {
+  scroll-behavior: smooth;
+}
+
+@layer utilities {
+  .m-container {
+    @apply mx-5 md:mx-16 lg:mx-32 xl:mx-40;
+  }
+
+  .a-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .h-center {
+    display: flex;
+    justify-content: center;
+  }
+
+  .v-center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+
+.logo-text {
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  background: linear-gradient(to right, #8597ff 0%, #ce78ff 100%);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.logo-text-bright {
+  background: linear-gradient(to right, #8597ff 0%, #ce78ff 100%);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.box-grad {
+  box-shadow: 0px 0px 4px 2px #b578ff;
+  border-radius: 0.075rem;
+}
+
+.box-grad:hover {
+  box-shadow: 0px 0px 6px 3px #8597ff;
+  border-radius: 0.125rem;
+}
+
+* {
+  /* font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif !important; */
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+    Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif !important;
+}
